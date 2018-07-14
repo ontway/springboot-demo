@@ -14,6 +14,7 @@ public class Controller {
     @RequestMapping("/")
     public String home() {
         String s = myBean.getName();
+
         return s;
     }
 }

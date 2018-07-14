@@ -6,9 +6,6 @@ import org.springframework.boot.autoconfigure.*;
 @SpringBootApplication
 public class Starter {
 
-
-
-
 //    @Bean
 //    public ExitCodeGenerator exitCodeGenerator() {
 //        return () -> 42;
