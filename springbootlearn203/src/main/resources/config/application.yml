@@ -1,13 +1,39 @@
-environments:
-  dev:
-    url: http://dev.example.com
-    name: Developer Setup
-  prod:
-    url: http://another.example.com
-    name: My Cool App
+#environments:
+#  dev:
+#    url: http://dev.example.com
+#    name: Developer Setup
+#  prod:
+#    url: http://another.example.com
+#    name: My Cool App
 
 #yaml list
-my:
-  servers:
-    - dev.example.com
-    - another.example.com
+#my:
+#  servers:
+#    - dev.example.com
+#    - another.example.com
+
+acme:
+  remote-address: 192.168.1.1
+  security:
+    username: admin
+    roles:
+      - USER
+      - ADMIN
+
+#A YAML file is actually a sequence of documents separated by --- lines, and each document is parsed
+#separately to a flattened map.
+#server:
+#  address: 192.168.1.100
+#---
+#spring:
+#  profiles: development
+#server:
+#  address: 127.0.0.1
+#---
+#spring:
+#  profiles: production
+#server:
+#address: 192.168.1.120
+
+#logging:
+#     file: mylog
